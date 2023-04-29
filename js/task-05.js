@@ -5,8 +5,8 @@ nameInput.addEventListener ("input", onAddTextInput);
 
 function onAddTextInput(event) {
   let name = event.currentTarget.value;
-  if (name === "") {
+  if (name.trim() === "") {
     nameOutput = "Anonymous";
   }
-  nameOutput.textContent = name;
+  nameOutput.textContent = name.trim();
 }
